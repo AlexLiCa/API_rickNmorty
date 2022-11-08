@@ -13,22 +13,22 @@ function App() {
       </div>
         <div className="container">
           <div className="row">
-            <Tarjeta img={rickImg} txt="Rick"/>
+            <Tarjeta img={rickImg} txt="Rick Sanchez"/>
           </div>
           <div className="row">
-            <Tarjeta img={rickImg} txt="Rick"/>
+            <Tarjeta img={rickImg} txt="Rick Sanchez"/>
           </div>
           <div className="row">
-            <Tarjeta img={rickImg} txt="Rick"/>
+            <Tarjeta img={rickImg} txt="Rick Sanchez"/>
           </div>
           <div className="row">
-            <Tarjeta img={rickImg} txt="Rick"/>
+            <Tarjeta img={rickImg} txt="Rick Sanchez"/>
           </div>
           <div className="row">
-            <Tarjeta img={rickImg} txt="Rick"/>
+            <Tarjeta img={rickImg} txt="Rick Sanchez"/>
           </div>
           <div className="row">
-            <Tarjeta img={rickImg} txt="Rick"/>
+            <Tarjeta img={rickImg} txt="Rick Sanchez"/>
           </div>
         </div>
         {/* <Personajes/> */}
