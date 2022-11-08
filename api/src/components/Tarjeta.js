@@ -5,7 +5,7 @@ const Tarjeta = ({img, txt}) => {
     return ( 
       <div className="row">
         <div className="card">
-            <img src={img} width="250px" height="150px"/>
+            <img src={img} width="250px" height="150px" className="img"/>
             <h1>{txt}</h1>
           </div>
       </div>

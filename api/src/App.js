@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <div className="bg">
       <div className="container">
-        <h1 className="card-s">Personajes Rick y Morty</h1>
+        <h1 className="card-s">Personajes de Rick y Morty</h1>
       </div>
         <div className="container">
             <Tarjeta img={rickImg} txt="Rick Sanchez"/>
