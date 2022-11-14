@@ -3,15 +3,16 @@ import axios from 'axios';
 import App from '../App.css'
 import Tarjeta from './Tarjeta'
 
-const Personajes = () => {
-    const[personajes, setPersonajes] = useState([]);
-    const url = 'https://rickandmortyapi.com/api/character'
+const Personajes = ({pag}) => {
+    const[personajes, setPersonajes] = useState([]);    
+    
+    const url = 'https://rickandmortyapi.com/api/character?page=1'
 
     useEffect(() => {
         axios.get(url).then((response) => {
             setPersonajes(response.data.results);
         })
-    }, [])
+    }, [pag])
 
     return ( 
         <>
