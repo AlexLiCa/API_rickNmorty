@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/API_rickNmorty/static/css/main.5d42ae46.css",
+    "main.js": "/API_rickNmorty/static/js/main.fab0ea8b.js",
+    "index.html": "/API_rickNmorty/index.html",
+    "main.5d42ae46.css.map": "/API_rickNmorty/static/css/main.5d42ae46.css.map",
+    "main.fab0ea8b.js.map": "/API_rickNmorty/static/js/main.fab0ea8b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d42ae46.css",
+    "static/js/main.fab0ea8b.js"
+  ]
+}
