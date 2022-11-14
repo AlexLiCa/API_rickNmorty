@@ -1,21 +1,33 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import App from '../App.css'
+import Tarjeta from './Tarjeta'
 
 const Personajes = () => {
     const[personajes, setPersonajes] = useState([]);
+    const url = 'https://rickandmortyapi.com/api/character'
 
-    const get_personajes = async () => {
-        const peticion = await axios.get('https://rickandmortyapi.com/api/character');
-        setPersonajes(...personajes,peticion.data.results);
-        console.log(personajes.data.results);
-        return 0;
-    }
-    get_personajes();
-
+    useEffect(() => {
+        axios.get(url).then((response) => {
+            setPersonajes(response.data.results);
+        })
+    }, [])
 
     return ( 
-        <p className="card">hola</p>
+        <>
+            <div className="container">
+                {personajes.map((personaje) => 
+                    <Tarjeta 
+                        key={personaje.id}
+                        name={personaje.name}
+                        img={personaje.image} 
+                        sts={personaje.status}    
+                        spc={personaje.species}    
+                        />
+                )}
+
+            </div>
+        </>
     );
 }
  

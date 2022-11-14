@@ -11,15 +11,15 @@ function App() {
       <div className="container">
         <h1 className="card-s">Personajes de Rick y Morty</h1>
       </div>
-        <div className="container">
-            <Tarjeta img={rickImg} txt="Rick Sanchez"/>
-            <Tarjeta img={rickImg} txt="Rick Sanchez"/>
-            <Tarjeta img={rickImg} txt="Rick Sanchez"/>
-            <Tarjeta img={rickImg} txt="Rick Sanchez"/>
-            <Tarjeta img={rickImg} txt="Rick Sanchez"/>
-            <Tarjeta img={rickImg} txt="Rick Sanchez"/>
-        </div>
-        {/* <Personajes/> */}
+        {/* <div className="container">
+            <Tarjeta img={rickImg} name="Rick Sanchez"/>
+            <Tarjeta img={rickImg} name="Rick Sanchez"/>
+            <Tarjeta img={rickImg} name="Rick Sanchez"/>
+            <Tarjeta img={rickImg} name="Rick Sanchez"/>
+            <Tarjeta img={rickImg} name="Rick Sanchez"/>
+            <Tarjeta img={rickImg} name="Rick Sanchez"/>
+        </div> */}
+        <Personajes/>
       </div>
     </div>
   );
