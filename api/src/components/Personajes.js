@@ -10,9 +10,10 @@ const Personajes = ({pag}) => {
 
     useEffect(() => {        
         axios.get(url).then((response) => {
+            console.log(url)
             setPersonajes(response.data.results);
         })
-    })
+    }, [pag])
 
     return ( 
         <>

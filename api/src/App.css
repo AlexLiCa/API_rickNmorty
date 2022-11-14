@@ -84,6 +84,15 @@ img {
   justify-content: center;
   text-align: center;
 }
+
+.container-l {
+  display: flex; /* or inline-flex */
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+}
+
 .row {
   flex: none; /* default 0 */
   flex-basis: auto;
