@@ -7,7 +7,6 @@ const Nav = ({pag, setPag, psj, setPsj}) => {
         if (e.target.name === "psj") {
             //console.log(e.target.value);
             setPsj(e.target.value);
-            setPag(1)
         }
     }
 

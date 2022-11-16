@@ -15,7 +15,7 @@ const Personajes = ({pag, psj}) => {
             })
         } 
         else {
-            const url = 'https://rickandmortyapi.com/api/character?name=' + psj.toString();
+            const url = 'https://rickandmortyapi.com/api/character?name=' + psj.toString() + "&page=" + pag.toString();;
             axios.get(url).then((response) => {
                 console.log(url)
                 setPersonajes(response.data.results);
