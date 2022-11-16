@@ -12,9 +12,10 @@ const Nav = ({pag, setPag, psj, setPsj}) => {
     }
 
     return ( 
+        
         <div className="container-l">
             <nav>
-                <div class="topnav">
+                <div className="topnav">
                     <a className="active">{pag}</a>
                     <a onClick={()=> setPag(1)}>{"<<"}</a>
                     <a onClick={()=> {pag === 1 ? (setPag(1)) : setPag(pag - 1)}}>
