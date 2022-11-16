@@ -20,14 +20,14 @@ const Nav = ({pag, setPag, psj, setPsj}) => {
                     <a onClick={()=> {pag === 1 ? (setPag(1)) : setPag(pag - 1)}}>
                         {"<"}
                     </a>
-                    <a onClick={()=> {pag === 42 ? (setPag(42)) : setPag(pag + 1)}}>
-                        {pag === 42 ? ("-") : (pag + 1)}
+                    <a onClick={()=> {pag >= 42 ? (setPag(42)) : setPag(pag + 1)}}>
+                        {pag >= 42 ? ("-") : (pag+1)}
                     </a>
-                    <a onClick={()=> {pag === 42 ? (setPag(42)) : setPag(pag + 2)}}>
-                    {pag === 42 ? ("-") : (pag + 2)}
+                    <a onClick={()=> {pag >= 41 ? (setPag(42)) : setPag(pag + 2)}}>
+                        {pag >= 41 ? ("-") : (pag+2)}
                     </a>
-                    <a onClick={()=> {pag === 42 ? (setPag(42)) : setPag(pag + 3)}}>
-                    {pag === 42 ? ("-") : (pag + 3)}
+                    <a onClick={()=> {pag >= 40 ? (setPag(42)) : setPag(pag + 3)}}>
+                        {pag >= 40 ? ("-") : (pag+3)}
                     </a>
                     <a onClick={()=> {pag === 42 ? (setPag(42)) : setPag(pag + 1)}}>
                         {pag === 42 ? ("-") : (">")}
